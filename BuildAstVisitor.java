@@ -6,7 +6,7 @@ you should override the methods.
 */
 
 
-public class BuildAstVisitor  {
+public class BuildAstVisitor extends ExprBaseVisitor  {
 
    
     

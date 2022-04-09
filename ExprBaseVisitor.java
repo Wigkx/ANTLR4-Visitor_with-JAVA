@@ -16,7 +16,7 @@ public class ExprBaseVisitor<T> extends AbstractParseTreeVisitor<T> implements E
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	@Override public T visitProg(ExprParser.ProgContext ctx) { return visitChildren(ctx); }
+	@Override public T visitProg(ExprParser.ProgContext ctx) { System.out.print("Count:"); System.out.println(ctx.getChildCount()); return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
